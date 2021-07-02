@@ -11,13 +11,14 @@
 </head>
 
 <body>
+    <!----Main Wrapper that holds  Input-->
     <h2 style="text-align: center;color: black;font-size: 2.5rem">Cox-Fun Interview Testing</h2>
     <div class="project" align="center">
         <div class="statusBar">
             <h4 id="statusBar"> Count Value:Input</h4>
             <div>
-
-                <textarea class="default-input" id="keyValPairs">
+                <!----Default Input-->
+                <textarea class="prescreen-input" id="keyValPairs">
 John:2
 Jane:3
 John:4
@@ -26,12 +27,13 @@ Jane:5</textarea>
         </div>
         <div class="text">
             <div>
-                <button type="submit" class="success-button" onclick="keyValueTotals()">Count Values</button>
-                <button type="submit" class="clear-button" onclick="clearTextarea()">Clear</button>
+                <!----Buttons to check the output and also to clear the input area-->
+                <button type="submit" class="prescreen-button" onclick="keyValueTotals()">Count Values</button>
+                <button type="submit" class="prescreen-button" onclick="clearTextarea()">Clear</button>
             </div>
         </div>
-
-        <section id="prescreen-output">
+        <!----Output-Answer-->
+        <section class="prescreen-output">
             <div>
                 <h4 id="statusBar"> Count Value:Output</h4>
         </section>
