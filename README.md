@@ -1,4 +1,4 @@
-# cox-prescreen
+# prescreen
 Create an HTML document called prescreen.html containing a textarea, a button, and any other markup you think
 appropriate to the exercise.
 Each line in the textarea should be expected to contain a key, separated from a count by a colon character. The key
