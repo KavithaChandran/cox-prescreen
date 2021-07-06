@@ -8,16 +8,17 @@ function keyValueTotals() {
   let obj = {};
   for (let i = 0; i < input.length; i++) {
     let keyValues = input[i].split(":");
-    if (obj.hasOwnProperty(keyValues[0])) {
+    if (obj.hasOwnProperty(
+        keyValues[0])) {
       let value = obj[keyValues[0]];
-      //--count is parsed to integer--//
+      //--count is parsed to integer(string to integer)--//
       value += parseInt(keyValues[1]);
       obj[keyValues[0]] = value;
     } else {
       obj[keyValues[0]] = parseInt(keyValues[1]);
     }
   }
-//---Palindrome Function---//
+//---Output & Palindrome Function---//
   let output = "";
   $.each(obj, function (key, value) {
     console.log(key);
